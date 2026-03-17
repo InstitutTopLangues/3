@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inscription - Institut Top Langues</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* HEADER */
+header{
+  background:#0057b7;
+  color:white;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#ffd000;
+}
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* FORM */
+.registration-section{
+  background:white;
+  max-width:900px;
+  margin:50px auto;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  animation:fadeIn 1.5s;
+}
+
+.registration-section h2{
+  text-align:center;
+  color:#0057b7;
+  margin-bottom:30px;
+}
+
+form{
+  display:grid;
+  gap:20px;
+}
+
+input, select, textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  font-size:16px;
+}
+
+textarea{
+  resize:none;
+}
+
+button{
+  background:#ffd000;
+  color:#0057b7;
+  padding:15px;
+  font-size:16px;
+  font-weight:bold;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#ffc107;
+}
+
+/* INFO & IMAGE SECTION */
+.info-image{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  margin-bottom:40px;
+}
+
+.info-text{
+  max-width:500px;
+}
+
+.info-text h3{
+  color:#0057b7;
+}
+
+.info-image img{
+  width:400px;
+  border-radius:12px;
+}
+
+/* FOOTER */
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:50px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(50px);}
+  to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">🌍 Institut Top Langues</div>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="#">Langues</a>
+<a href="inscription.html">Inscription</a>
+</nav>
+</header>
+
+<section class="registration-section">
+
+<h2>Formulaire d'inscription complet</h2>
+
+<div class="info-image">
+<div class="info-text">
+<h3>Rejoignez Institut Top Langues</h3>
+<p>Remplissez ce formulaire pour vous inscrire à nos cours de langues.</p>
+</div>
+
+<img src="b.png">
+</div>
+
+<form id="whatsappForm">
+
+<input type="text" id="nom" placeholder="Nom complet" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="tel" id="telephone" placeholder="Téléphone" required>
+<input type="number" id="age" placeholder="Âge" required>
+
+<select id="sexe" required>
+<option value="">Sexe</option>
+<option>Homme</option>
+<option>Femme</option>
+</select>
+
+<select id="langue" required>
+<option value="">Choisir la langue</option>
+<option>Français</option>
+<option>English</option>
+<option>Deutsch</option>
+<option>Espagnol</option>
+<option>Nederland</option>
+</select>
+
+<select id="niveau" required>
+<option value="">Niveau</option>
+<option>Débutant</option>
+<option>Intermédiaire</option>
+<option>Avancé</option>
+</select>
+
+<textarea id="message" placeholder="Commentaires"></textarea>
+
+<button type="submit">Envoyer l'inscription</button>
+
+</form>
+
+</section>
+
+<footer>
+<p>📞 +212 688-123505</p>
+<p>📧 instituttoplangues@gmail.com</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/212688123505" target="_blank">
+💬 WhatsApp
+</a>
+
+<script>
+
+document.getElementById("whatsappForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let nom = document.getElementById("nom").value;
+let email = document.getElementById("email").value;
+let tel = document.getElementById("telephone").value;
+let age = document.getElementById("age").value;
+let sexe = document.getElementById("sexe").value;
+let langue = document.getElementById("langue").value;
+let niveau = document.getElementById("niveau").value;
+let message = document.getElementById("message").value;
+
+let text =
+"Nouvelle inscription Institut Top Langues%0A%0A"+
+"Nom: "+nom+"%0A"+
+"Email: "+email+"%0A"+
+"Telephone: "+tel+"%0A"+
+"Age: "+age+"%0A"+
+"Sexe: "+sexe+"%0A"+
+"Langue: "+langue+"%0A"+
+"Niveau: "+niveau+"%0A"+
+"Message: "+message;
+
+let url = "https://wa.me/212688123505?text=" + text;
+
+window.open(url, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>
