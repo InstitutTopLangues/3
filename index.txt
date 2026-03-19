@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Institut Top Langues</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f4f4;}
+header{background:#0057b7;color:white;padding:15px 40px;display:flex;justify-content:space-between;align-items:center;}
+.logo{font-size:24px;font-weight:bold;color:#ffd000;}
+nav a{color:white;margin-left:20px;text-decoration:none;font-weight:bold;}
+
+/* HERO */
+.slider{position:relative;height:500px;overflow:hidden;}
+.slide{position:absolute;width:100%;height:100%;opacity:0;transition:1s;}
+.slide.active{opacity:1;}
+.slide img{width:100%;height:500px;object-fit:cover;}
+.caption{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.5);color:white;padding:30px;text-align:center;border-radius:10px;}
+.btn{background:#ffd000;color:#0057b7;padding:12px 25px;text-decoration:none;border-radius:6px;font-weight:bold;}
+
+/* ABOUT */
+.about{padding:80px 20px;background:white;}
+.about-container{display:flex;align-items:center;justify-content:center;gap:50px;max-width:1100px;margin:auto;flex-wrap:wrap;}
+.about-image img{width:400px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.2);animation:slideLeft 1.5s;}
+.about-text{max-width:500px;animation:slideRight 1.5s;}
+.about-text h2{font-size:32px;color:#0057b7;}
+
+/* COUNTRIES */
+.countries{padding:80px 20px;background:#f9f9f9;text-align:center;}
+.countries h2{font-size:36px;color:#0057b7;margin-bottom:40px;}
+.countries-container{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
+.country-card{width:320px;background:white;border-radius:12px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,0.15);transition:0.4s;}
+.country-card:hover{transform:translateY(-10px);}
+.country-card img{width:100%;height:200px;object-fit:cover;}
+.country-text{padding:20px;}
+
+/* STATS */
+.stats{background:#0057b7;color:white;display:flex;justify-content:center;gap:60px;padding:60px 20px;flex-wrap:wrap;}
+.stat{font-size:28px;text-align:center;}
+
+/* GALLERY */
+.gallery{padding:70px 20px;text-align:center;}
+.gallery-container{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.gallery img{width:300px;border-radius:10px;transition:0.3s;}
+.gallery img:hover{transform:scale(1.05);}
+
+/* MAP */
+.map{margin-top:40px;}
+
+/* FOOTER */
+footer{background:#222;color:white;text-align:center;padding:20px;}
+
+/* WHATSAPP */
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold;}
+
+/* ANIMATIONS */
+@keyframes slideLeft{from{opacity:0;transform:translateX(-60px);}to{opacity:1;transform:translateX(0);}}
+@keyframes slideRight{from{opacity:0;transform:translateX(60px);}to{opacity:1;transform:translateX(0);}}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">🌍 Institut Top Langues</div>
+<nav>
+<a href="#">Accueil</a>
+<a href="#">Langues</a>
+<a href="inscription.html">Inscription</a>
+</nav>
+</header>
+
+<!-- HERO SLIDER -->
+<section class="slider">
+<div class="slide active">
+<img src="8.png">
+<div class="caption">
+<h1>Bienvenue à Institut Top Langues</h1>
+<p>Apprenez les langues facilement</p>
+<a class="btn" href="inscription.html"></a>
+</div>
+</div>
+<div class="slide">
+<img src="h.png">
+<div class="caption">
+<h1>Cours pour tous les niveaux</h1>
+<p>Français • English • Deutsch</p>
+</div>
+</div>
+<div class="slide">
+<img src="8.png">
+<div class="caption">
+<h1>Professeurs qualifiés</h1>
+<p>Rejoignez notre institut</p>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+<div class="about-container">
+<div class="about-image">
+<img src="y.png">
+</div>
+<div class="about-text">
+<h2>À propos de notre institut</h2>
+<p>Méthodologie d'enseignement
+
+Nos professeurs utilisent des méthodes pédagogiques modernes et interactives qui permettent aux étudiants d'apprendre rapidement la langue et de développer des compétences essentielles :
+
+• Expression orale
+
+• Compréhension orale
+
+• Compréhension écrite
+
+• Expression écrite
+
+Ces cours se déroulent dans un environnement d'apprentissage stimulant et confortable, propice à une progression en toute confiance.
+
+⸻
+
+Nos services
+
+À l'Institut Top Languages, nous proposons aux étudiants :
+
+• Un test de niveau avant le début de leurs études
+
+• Un suivi régulier de leur progression
+
+• Des programmes d'apprentissage structurés
+
+• Des cours interactifs avec des professeurs qualifiés
+
+⸻
+
+Plus de 15 ans d'expérience
+
+Fort de plus de 15 ans d'expérience dans l'enseignement des langues, l'institut est un centre de confiance pour le développement des étudiants et leur réussite dans leurs projets académiques et professionnels.</p>
+<a class="btn" href="inscription.html">S'inscrire</a>
+</div>
+</div>
+</section>
+
+<!-- COUNTRIES -->
+<section class="countries">
+<h2>Apprenez les langues du monde</h2>
+<div class="countries-container">
+<div class="country-card">
+<img src="6.png">
+<div class="country-text"><h3>Français</h3></div>
+</div>
+
+</section>
+
+<!-- STATS -->
+<section class="stats">
+<div class="stat"><h2>1000+</h2><p>Étudiants</p></div>
+<div class="stat"><h2>5</h2><p>Langues</p></div>
+<div class="stat"><h2>10+</h2><p>Professeurs</p></div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+<h2>Nos étudiants</h2>
+<div class="gallery-container">
+<img src="1.png">
+<img src="2.png">
+<img src="3.png">
+</div>
+</section>
+
+<!-- MAP -->
+<section class="map">
+<iframe src="https://www.google.com/maps?q=34.9261685,-2.3325703&output=embed" width="100%" height="400" style="border:0;"></iframe>
+</section>
+
+<footer>
+<p>📞 +212 688-123505</p>
+<p>📧 instituttoplangues@gmail.com</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/212688123505" target="_blank">💬 WhatsApp</a>
+
+<script>
+let slides=document.querySelectorAll(".slide");
+let index=0;
+setInterval(()=>{
+slides[index].classList.remove("active");
+index++;
+if(index>=slides.length){index=0;}
+slides[index].classList.add("active");
+},4000);
+</script>
+
+</body>
+</html>
